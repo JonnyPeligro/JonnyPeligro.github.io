@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página Web</title>
+
+    <!-- Cargar la Fuente Train One desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4c53af;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        header img {
+            width: 80px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        header h1 {
+            font-family: 'Train One', cursive;
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #4c53af;
+        }
+
+        section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s;
+        }
+
+        section:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.8em;
+            color: #666;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        form {
+            margin: 20px 0;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        input[type="submit"] {
+            background-color: #4c53af;
+            color: white;
+            cursor: pointer;
+            width: auto;
+            padding: 10px 20px;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #3a408f;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png" alt="Logo de Firefox">
+        <h1>Bienvenidos a Mi Página Web</h1>
+    </header>
+
+    <nav aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca de</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <p>Esta es mi primera página web creada en clase. ¡Estoy aprendiendo HTML!</p>
+        <p>HTML es el lenguaje estándar para crear páginas web. Define la estructura del contenido.</p>
+        <p>En esta página podrás conocer más sobre mí y mis intereses.</p>
+    </section>
+
+    <section id="acerca">
+        <h2>Acerca de Mí</h2>
+        <p>Hola, soy [Tu Nombre]. Estoy aprendiendo desarrollo web.</p>
+        <p>Actualmente estudio en [Nombre de tu colegio] y me apasiona aprender sobre tecnología.</p>
+        <p>Mis intereses incluyen:</p>
+        <ul>
+            <li>Programación web</li>
+            <li>Diseño gráfico</li>
+            <li>Tecnología en general</li>
+            <li>Videojuegos</li>
+        </ul>
+        <img src="https://redacademica.edu.co/sites/default/files/2022-06/ESCUDO_3.jpg" 
+             alt="Escudo del colegio Divino Maestro"
+             width="300"
+             height="300">
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Quieres ponerte en contacto conmigo? Completa el siguiente formulario:</p>
+        <form>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Enviar Mensaje">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Mi Primera Página Web. Todos los derechos reservados.</p>
+        <p>Creado por Jonnathan Bareño Ñustes</p>
+    </footer>
+
+</body>
+</html>
